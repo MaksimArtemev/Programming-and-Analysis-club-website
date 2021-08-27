@@ -1,0 +1,152 @@
+/*
+Maksim Artemev
+Programming & Analysis Club Home Page
+Start Date: August 26, 2021
+End   Date: In process..
+*/
+
+/*Reset selector*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1921px;
+    background-color: #f0f7f8;
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#header_image {
+    width: 100%;
+}
+
+#club_logo {
+    width: 10%;
+}
+
+.nav-list {
+    display: flex;
+    background: white;
+    box-shadow: 0 0 10px #cfd8dc;
+    padding: 1em 0;
+    border-radius: 0.2em;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 2em;
+}
+
+    .nav-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .nav-item a:hover, .nav-item a:focus {
+            color: #29e6a7;
+            transition: all 200ms ease-in;
+        }
+
+    .nav-item:first-child {
+        margin: 0 auto 0 2em;
+    }
+
+#current:visited, #current:link {
+    color: #11c287;
+}
+
+main {
+    padding: 0 10% 0 10%;
+}
+
+#club_name {
+    text-align: center;
+}
+
+article {
+    padding: 0 0 40px 0;
+}
+
+#major_links {
+    display: flex;
+    justify-content: center;
+}
+
+.link-list {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #cfd8dc;
+    padding: 1em;
+    border-radius: 0.2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-item {
+    list-style: none;
+    line-height: 300%;
+}
+
+    .link-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+.icon {
+    width: 10%;
+    margin: 0 5% 0 0;
+}
+
+#line {
+    border-bottom: 2px solid #baced1;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #baced1;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* tablet portrait up to 800px */
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 95%;
+    }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 768px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+        top: 100%;
+    }
+
+    #major_links {
+        flex-direction: column;
+    }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 90%;
+    }
+}

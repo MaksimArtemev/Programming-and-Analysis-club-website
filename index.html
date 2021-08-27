@@ -1,0 +1,131 @@
+<!--
+Maksim Artemev
+Programming & Analysis Club Home Page
+Start Date: August 26, 2021
+End   Date: In process..
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P&A Club | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div><img id="header_image" src="images/beach.jpg" alt="Theme Image"></div>
+
+        <div>
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><img id="club_logo" src="images/logo.png" alt="Club Logo" /></a></li>
+                    <li class="nav-item"><a id="current" href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="news/news.html">News</a></li>
+                    <li class="nav-item"><a href="projects/projects.html">Projects</a></li>
+                    <li class="nav-item"><a href="members/members.html">Members</a></li>
+                    <li class="nav-item"><a href="contact/contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a href="signning_form/sign_in.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1 id="club_name">Programming & Analysis Club!</h1>
+        <!--Welcome statement-->
+        <article>
+            Welcome to the <b>Programming & Analysis Club!</b> Here's all the stuff you need to know, use, and focus on.
+            We are a group of dedicated people who enjoy coding. Everyone could find what he likes here either developping
+            websites by working on front-end and back-end, creating games through Unity and Unreal engines with C# and C++
+            respectively, making fun stuff with Python, or looking into the deeps of databases with MySQL. Everyone could
+            find what he likes here. Programming & Analysis Club though could also give you help with hw assignment when
+            you stuck and cannot find your next step, we got your back. Also, we have movie nights.
+            Come join by contacting us today!
+            <br />
+            Reach out to @Maksi_Plus  if you have any questions!
+        </article>
+
+        <section id="major_links">
+            <!--All important links-->
+            <ul class="link-list">
+                <li class="link-item"><a href="club_mission/club_mission.html"><img class="icon" src="images/award.png" />Club Mission</a></li>
+                <li class="link-item"><a href="news/news.html"><img class="icon" src="images/light-bulb.png" />News</a></li>
+                <li class="link-item"><a href="members/members.html"><img class="icon" src="images/members.png" />Members</a></li>
+                <li class="link-item"><a href="projects/projects.html"><img class="icon" src="images/project.png" />Projects</a></li>
+            </ul>
+
+            <ul class="link-list">
+                <li class="link-item"><a href="contact/contact.html"><img class="icon" src="images/join.png" />Join/Contact Us</a></li>
+                <li class="link-item"><a href="meeting_notes/meeting_notes.html"><img class="icon" src="images/notes.png" />Meeting Notes</a></li>
+                <li class="link-item"><a href="merch/merch.html"><img class="icon" src="images/merch.png" />Merch</a></li>
+            </ul>
+        </section>
+
+        <h1 id="line">Initiatives</h1> <!--Make bottom border line-->
+
+        <section id="events">
+            <div class="event_block">
+                <div>
+                    <img class="icon" src="images/folder.png" alt="Club Rush">
+                </div>
+                <div>
+                    <img class="icon" src="images/folder.png" alt="Club Rush logo"> <span>Club Rush</span>
+                    <p>
+                        Location: Santa Fe College next to Food Court <br />
+                        Date: September 8 & September 9 <br />
+                        Time: 10:00am - 2:00pm
+                    </p>
+                </div>
+            </div>
+
+            <div class="event_block">
+                <div>New Initiative</div>
+            </div>
+
+            <div class="event_block">
+                <div>New Initiative</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <!--copyright-->
+        <div>
+            <p>
+                &copy;&nbsp;2021 Maksi_Plus Inc. All rights reserved.<br>
+                <div>
+                    Pictures taken from
+                    <a href="https://pixabay.com/" title="Pixabay">www.pixabay.com</a>
+                </div>
+                <div>
+                    Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </div>
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

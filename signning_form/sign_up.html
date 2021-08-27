@@ -1,0 +1,185 @@
+<!--
+Maksim Artemev
+Programming & Analysis Club Home Page
+Start Date: August 26, 2021
+End   Date: In process..
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming & Analysis Club | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/sign_up.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div><a href="index.html"><img id="header_image" src="images/theme_pic_1920x268.jpg" alt="Theme Image"></a></div>
+
+        <div>
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><img id="club_logo" src="images/logo.png" alt="Club Logo" /></a></li>
+                    <li class="nav-item"><a id="current" href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="#news">News</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#members">Members</a></li>
+                    <li class="nav-item"><a href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a href="signning_form/sign_in.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id='form'>
+            <h1>Create Account</h1>
+
+            <p>It will help you to get the best experience! </p>
+
+            <form name="registration" action="sign_up_submission.html" method="get">
+
+                <section id="about_u">
+
+                    <div>
+                        <input name="First_name" type="text" autofocus required placeholder="*First name" class="imp" />
+                    </div>
+
+                    <div>
+                        <input name="Last_name" type="text" required placeholder="*Last name" class="imp" />
+                    </div>
+
+                    <div>
+                        <input name="username" type="text" placeholder="Username name" />
+                    </div>
+
+                    <div>
+                        <input name="email" type="email" id="email" placeholder="*E-mail" class="imp" />
+                    </div>
+
+                    <div>
+                        <select id="gender">
+                            <outgroup>
+                                <option name="select_gender" value="select_G">Select a gender</option>
+                                <option name="Gender_male" value="male">Male</option>
+                                <option name="Gender_female" value="female">Female</option>
+                                <option name="Gender_trans" value="trans">Transgender</option>
+                                <option name="Gender_netral" value="neutral">Gender neutral</option>
+                                <option name="Gender_non_b" value="hide">Non-binary</option>
+                                <option name="Gender_agender" value="agender">Agender</option>
+                                <option name="Gender_pan" value="pangender">Pangender</option>
+                                <option name="Gender_queer" value="genderqueer">Genderqueer</option>
+                                <option name="Gender_X" value="hide">Prefer not to say</option>
+                            </outgroup>
+                        </select>
+                    </div>
+
+                    <div>
+                        <select id="age">
+                            <outgroup>
+                                <option name="Age" value="Age">Select your age</option>
+                                <option name="Age" value="Age">10-18</option>
+                                <option name="Age" value="Age">19-25</option>
+                                <option name="Age" value="Age">26-50</option>
+                                <option name="Age" value="Age">51-75</option>
+                                <option name="Age" value="Age">76+</option>
+                            </outgroup>
+                        </select>
+                    </div>
+
+                </section>
+
+                <fieldset>
+
+                    <legend>Let us know how did you find us?</legend>
+
+                    <div>
+
+                        <!--<label>Select all that apply:</label>-->
+
+
+                        <div id="found_us">
+                            <input class="input" name="find_method" type="checkbox" value="friend" />Friend
+                            <input class="input" name="find_method" type="checkbox" value="family" />Family
+                            <input class="input" name="find_method" type="checkbox" value="internet_ad" />Internet ad
+                            <input class="input" name="find_method" type="checkbox" value="google" />Google
+                            <br>
+                            <input class="input" name="find_method" type="checkbox" value="other" />Other (type your answer below)
+                        </div>
+
+                        <span id="found_us_2">
+                            <textarea name="text_found_by" class="text_box"
+                                      placeholder="Please, leave your comment here.">
+                            </textarea>
+                        </span>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Survey (optional)</legend>
+
+                    <div>
+                        <label>Would you like to take 5min survey to help us improve our website?</label>
+                        <div>
+                            <input class="input" name="activity_lvl_change" type="radio" value="yes" />Yes
+                            <input class="input" name="activity_lvl_change" type="radio" value="no" />No
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <section id="sub_res">
+                    <input id="submit_btn" type="submit" value="Sign Up" />
+
+                    <span>
+                        <input id="reset_btn" type="reset" value="Reset" />
+                    </span>
+                </section>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <!--copyright-->
+        <div>
+            <p>
+                &copy;&nbsp;2021 Maksi_Plus Inc. All rights reserved.<br>
+                <div>
+                    Pictures taken from
+                    <a href="https://pixabay.com/" title="Pixabay">www.pixabay.com</a>
+                </div>
+                <div>
+                    Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </div>
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

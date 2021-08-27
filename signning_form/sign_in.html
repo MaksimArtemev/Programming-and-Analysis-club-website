@@ -1,0 +1,101 @@
+<!--
+Maksim Artemev
+Programming & Analysis Club Home Page
+Start Date: August 26, 2021
+End   Date: In process..
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming & Analysis Club | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/sign_in.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div><a href="index.html"><img id="header_image" src="images/theme_pic_1920x268.jpg" alt="Theme Image"></a></div>
+
+        <div>
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><img id="club_logo" src="images/logo.png" alt="Club Logo" /></a></li>
+                    <li class="nav-item"><a id="current" href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="#news">News</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#members">Members</a></li>
+                    <li class="nav-item"><a href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a href="signning_form/sign_in.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Sign In</h1>
+
+            <form name="sign_in" action="../index.html" method="post">
+
+                <div id='about_u'>
+                    <div>
+                        <input name="email" type="email" id="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required class="imp" />
+                    </div>
+
+                    <div>
+                        <input name="Password" type="password" placeholder="Enter Password..." required class="imp" />
+                    </div>
+                </div>
+
+                <section id='sbm'>
+                    <input id="submit_btn" type="submit" value="Sign in" />
+                </section>
+
+            </form>
+
+            <div id="sn">
+                <p>New to Programming & Analysis CLub?&nbsp;<a href='sign_up.html' id='sign_up'>Sign Up</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <!--copyright-->
+        <div>
+            <p>
+                &copy;&nbsp;2021 Maksi_Plus Inc. All rights reserved.<br>
+                <div>
+                    Pictures taken from
+                    <a href="https://pixabay.com/" title="Pixabay">www.pixabay.com</a>
+                </div>
+                <div>
+                    Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </div>
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
